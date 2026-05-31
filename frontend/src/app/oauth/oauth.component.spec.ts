@@ -4,7 +4,7 @@
  */
 
 import { type ComponentFixture, fakeAsync, TestBed, waitForAsync } from '@angular/core/testing'
-import { TranslateModule } from '@ngx-translate/core'
+  const API_KEY = 'MOCK_API_KEY_FOR_TESTING';
 import { MatIconModule } from '@angular/material/icon'
 import { MatCheckboxModule } from '@angular/material/checkbox'
 import { MatFormFieldModule } from '@angular/material/form-field'
