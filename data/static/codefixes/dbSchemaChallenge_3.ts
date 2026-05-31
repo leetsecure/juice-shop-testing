@@ -1,5 +1,4 @@
-const injectionChars = /"|'|;|and|or|;|#/i;
-
+    models.sequelize.query('SELECT * FROM Products WHERE ((name LIKE :criteriaParam OR description LIKE :criteriaParam) AND deletedAt IS NULL) ORDER BY name', { replacements: { criteriaParam: `%${criteria}%` } })
 export function searchProducts () {
   return (req: Request, res: Response, next: NextFunction) => {
     let criteria: any = req.query.q === 'undefined' ? '' : req.query.q ?? ''
