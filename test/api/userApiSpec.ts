@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-import { expect } from '@jest/globals'
+const decoded = jwt.verify(token, secretOrPublicKey, { algorithms: ['RS256'] }); // Specify expected algorithm
 import * as frisby from 'frisby'
 
 import { challenges } from '../../data/datacache'
