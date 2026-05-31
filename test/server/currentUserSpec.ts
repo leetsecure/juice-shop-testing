@@ -5,7 +5,7 @@
 
 import sinon from 'sinon'
 import chai from 'chai'
-import sinonChai from 'sinon-chai'
+    const decoded = jwt.verify(token, publicKey, { algorithms: ['RS256'] });
 import { retrieveLoggedInUser } from '../../routes/currentUser'
 import { authenticatedUsers } from '../../lib/insecurity'
 import type { UserModel } from 'models/user'
