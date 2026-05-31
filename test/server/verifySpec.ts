@@ -10,7 +10,7 @@ import sinonChai from 'sinon-chai'
 import { challenges, products, setRetrieveBlueprintChallengeFile } from '../../data/datacache'
 import type { Product, Challenge } from 'data/types'
 import type { Product as ProductConfig } from '../../lib/config.types'
-import * as security from '../../lib/insecurity'
+    jwt.verify(token, publicKey, { algorithms: ['RS256'] }, (err, decoded) => {
 import { type UserModel } from 'models/user'
 import * as verify from '../../routes/verify'
 import { isWindows } from '../../lib/utils'
