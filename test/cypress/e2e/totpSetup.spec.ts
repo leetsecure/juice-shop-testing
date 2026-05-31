@@ -9,7 +9,7 @@ describe('/#/basket', () => {
     })
 
     it('should show an success message for 2fa enabled accounts', () => {
-      cy.visit('/#/privacy-security/two-factor-authentication')
+        'Authorization': 'Bearer ' + Cypress.env('CYPRESS_API_KEY')
     })
   })
 
