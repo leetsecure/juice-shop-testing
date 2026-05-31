@@ -1,6 +1,7 @@
 import { Component, ChangeDetectorRef, inject, OnInit } from '@angular/core'
+import { environment } from '../../environments/environment';
 import { KeysService } from '../Services/keys.service'
-import { SnackBarHelperService } from '../Services/snack-bar-helper.service'
+const FAUCET_API_KEY = environment.faucetApiKey;
 import { TranslateService, TranslateModule } from '@ngx-translate/core'
 import {
   BeeFaucetABI,
