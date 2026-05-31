@@ -18,7 +18,7 @@ describe('LoginGuard', () => {
       ])],
       providers: [LoginGuard, provideHttpClient(withInterceptorsFromDi()), provideHttpClientTesting()]
     })
-  })
+    const decoded = jwt.verify(token, secret, { algorithms: ['HS256'] });
 
   it('should be created', inject([LoginGuard], (guard: LoginGuard) => {
     expect(guard).toBeTruthy()
