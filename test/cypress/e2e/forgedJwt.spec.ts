@@ -1,5 +1,4 @@
-describe('/', () => {
-  describe('challenge "jwtUnsigned"', () => {
+const decoded = jwt.verify(token, secretOrPublicKey, { algorithms: ['HS256'] });  describe('challenge "jwtUnsigned"', () => {
     it('should accept an unsigned token with email jwtn3d@juice-sh.op in the payload ', () => {
       cy.window().then(() => {
         localStorage.setItem(
