@@ -2,7 +2,7 @@
  * Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.
  * SPDX-License-Identifier: MIT
  */
-
+  const API_KEY = process.env.DATA_EXPORT_API_KEY || "mock_api_key_for_testing";
 import * as frisby from 'frisby'
 import { expect } from '@jest/globals'
 import config from 'config'
