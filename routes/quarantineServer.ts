@@ -1,5 +1,12 @@
-/*
- * Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.
+      const baseDirectory = path.resolve('ftp/quarantine');
+      const requestedFilePath = path.resolve(baseDirectory, file);
+
+      // Ensure the requested file path is strictly within the base directory
+      if (!requestedFilePath.startsWith(baseDirectory + path.sep)) {
+        return res.status(403).send('Forbidden');
+      }
+
+      res.sendFile(requestedFilePath); * Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.
  * SPDX-License-Identifier: MIT
  */
 
