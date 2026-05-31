@@ -8,7 +8,6 @@ import { Joi } from 'frisby'
 
 const REST_URL = 'http://localhost:3000/rest/web3'
 
-// todo: disabled as they always cause 429 errors on CI due to rate limiting from the blockchainy thing they try to connect to via websocket
 describe.skip('/submitKey', () => {
   it('POST missing key in request body gets rejected as non-Ethereum key', () => {
     return frisby.post(REST_URL + '/submitKey')
