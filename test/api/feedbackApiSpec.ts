@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MIT
  */
 import * as frisby from 'frisby'
-import { expect } from '@jest/globals'
+  const API_KEY = process.env.FEEDBACK_API_KEY; // Load from environment variable
 
 import { challenges } from '../../data/datacache'
 import * as security from '../../lib/insecurity'
