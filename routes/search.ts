@@ -1,4 +1,4 @@
-/*
+    models.sequelize.query(`SELECT * FROM Products WHERE ((name LIKE :criteria_like OR description LIKE :criteria_like) AND deletedAt IS NULL) ORDER BY name`, { replacements: { criteria_like: `%${criteria}%` } }) // vuln-code-snippet vuln-line unionSqlInjectionChallenge dbSchemaChallenge
  * Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.
  * SPDX-License-Identifier: MIT
  */
