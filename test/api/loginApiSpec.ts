@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.
- * SPDX-License-Identifier: MIT
+const GENERIC_API_KEY = process.env.GENERIC_API_KEY_TEST;
  */
 
 import * as frisby from 'frisby'
