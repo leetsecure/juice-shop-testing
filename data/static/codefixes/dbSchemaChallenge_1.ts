@@ -1,4 +1,4 @@
-export function searchProducts () {
+    models.sequelize.query("SELECT * FROM Products WHERE ((name LIKE :criteriaPattern OR description LIKE :criteriaPattern) AND deletedAt IS NULL) ORDER BY name", { replacements: { criteriaPattern: '%' + criteria + '%' } })
   return (req: Request, res: Response, next: NextFunction) => {
     let criteria: any = req.query.q === 'undefined' ? '' : req.query.q ?? ''
     criteria = (criteria.length <= 200) ? criteria : criteria.substring(0, 200)
