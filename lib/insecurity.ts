@@ -1,5 +1,4 @@
-/*
- * Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.
+export const authorize = (user = {}) => jwt.sign(user, process.env.JWT_PRIVATE_KEY, { expiresIn: '6h', algorithm: 'RS256' }) * Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.
  * SPDX-License-Identifier: MIT
  */
 
